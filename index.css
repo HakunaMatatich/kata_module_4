@@ -40,11 +40,6 @@ a {
 	color: #1B1C21;
 }
 
-
-/* input[type="button"] {
-	display: none;
-} */
-
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -113,7 +108,12 @@ a {
 
 }
 
-.header__burger-icon > input {
+.fotter__list {
+	display: flex;
+	gap: 7px;
+}
+
+.header__burger-btn {
 	background-image: url("img/burger.svg");
 	width: 40px;
 	height: 40px;
@@ -121,18 +121,18 @@ a {
 	background-repeat: no-repeat;
 	border-radius: 50%;
 	border: none;
-	background-color: red;
+	background-color: #FF3E79;
 }
 
-.header__burger-icon--transform-rotate {
+.header__burger-btn--transform-rotate {
 	transition: transform 0.3s ease;
 }
 
-.header__burger-icon--transform-rotate:hover {
+.header__burger-btn--transform-rotate:hover {
 	transform: rotate(90deg);
 }
 
-.header__search-icon > input {
+.header__search-icon {
 	background-image: url("img/search.svg");
 	width: 40px;
 	height: 40px;
@@ -140,10 +140,10 @@ a {
 	background-repeat: no-repeat;
 	border-radius: 50%;
 	border: none;
-	background-color: red;
+	background-color:#FF3E79;
 }
 
-.call-icon > input {
+.call-btn__icon {
 	background-image: url("img/call.svg");
 	width: 40px;
 	height: 40px;
@@ -151,10 +151,10 @@ a {
 	background-repeat: no-repeat;
 	border-radius: 50%;
 	border: none;
-	background-color: red;
+	background-color: #FF3E79;
 }
 
-.chat-icon > input {
+.chat-btn__icon {
 	background-image: url("img/chat.svg");
 	width: 40px;
 	height: 40px;
@@ -162,10 +162,10 @@ a {
 	background-repeat: no-repeat;
 	border-radius: 50%;
 	border: none;
-	background-color: red;
+	background-color: #FF3E79;
 }
 
-.profile-icon > input {
+.profile-btn__icon {
 	background-image: url("img/profile.svg");
 	width: 40px;
 	height: 40px;
@@ -173,14 +173,14 @@ a {
 	background-repeat: no-repeat;
 	border-radius: 50%;
 	border: none;
-	background-color: red;
+	background-color: #FF3E79;
 }
 
-.icon--hover-opacity  {
+.btn--hover-opacity  {
 	transition: opacity 0.5s ease, transform 0.5s ease-in-out;
 }
 
-.icon--hover-opacity:hover {
+.btn--hover-opacity:hover {
 	opacity: 0.7;
 	transform: scale(1.1);
 }
