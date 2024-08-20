@@ -113,8 +113,8 @@ a {
 	gap: 7px;
 }
 
-.header__burger-btn {
-	background-image: url("img/burger.svg");
+.header__btn,
+.footer__btn {
 	width: 40px;
 	height: 40px;
 	background-position: center;
@@ -124,63 +124,41 @@ a {
 	background-color: #FF3E79;
 }
 
-.header__burger-btn--transform-rotate {
+.header__btn--burger {
+	background-image: url("img/burger.svg");
+}
+
+.header__btn--transform-rotate {
 	transition: transform 0.3s ease;
 }
 
-.header__burger-btn--transform-rotate:hover {
+.header__btn--transform-rotate:hover {
 	transform: rotate(90deg);
 }
 
-.header__search-icon {
+.header__btn--search {
 	background-image: url("img/search.svg");
-	width: 40px;
-	height: 40px;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 50%;
-	border: none;
-	background-color:#FF3E79;
 }
 
-.call-btn__icon {
+.footer__btn--call {
 	background-image: url("img/call.svg");
-	width: 40px;
-	height: 40px;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 50%;
-	border: none;
-	background-color: #FF3E79;
 }
 
-.chat-btn__icon {
+.footer__btn--chat {
 	background-image: url("img/chat.svg");
-	width: 40px;
-	height: 40px;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 50%;
-	border: none;
-	background-color: #FF3E79;
 }
 
-.profile-btn__icon {
+.footer__btn--profile {
 	background-image: url("img/profile.svg");
-	width: 40px;
-	height: 40px;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 50%;
-	border: none;
-	background-color: #FF3E79;
 }
 
-.btn--hover-opacity  {
+.header__btn--hover-opacity-scale,
+.footer__btn--hover-opacity-scale  {
 	transition: opacity 0.5s ease, transform 0.5s ease-in-out;
 }
 
-.btn--hover-opacity:hover {
+.header__btn--hover-opacity-scale:hover,
+.footer__btn--hover-opacity-scale:hover {
 	opacity: 0.7;
 	transform: scale(1.1);
 }
